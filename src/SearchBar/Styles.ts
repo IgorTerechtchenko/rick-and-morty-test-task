@@ -9,6 +9,7 @@ export const Input = styled.input`
     border: 1px solid #A0A0A0;
     outline: none;
 
+    font-family: 'Roboto';
     text-transform: uppercase;
     padding-left: 25px;
     font-size: 30px;

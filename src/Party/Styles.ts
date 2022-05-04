@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const PartyWrapper = styled.div`
     margin-top: 100px;
     margin-bottom: 140px;
+    font-family: 'Roboto';
 `;
 
 export const PartyHeader = styled.h1`
