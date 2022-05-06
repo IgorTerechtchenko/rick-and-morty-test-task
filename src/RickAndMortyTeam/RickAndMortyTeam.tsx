@@ -29,7 +29,7 @@ export interface PartyType {
 }
 
 export function RickAndMortyTeam() {
-    const [search, {called, loading, data}] = useLazyQuery(
+    const [search, { data }] = useLazyQuery(
         CHARACTERS_QUERY,
     );
 
@@ -59,7 +59,7 @@ export function RickAndMortyTeam() {
     });
 
     return <div>
-      <SearchBar search={search} data={data} />
+      <SearchBar search={search} />
       {
         filteredCharacters
           && <SearchResults

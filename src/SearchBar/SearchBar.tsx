@@ -2,12 +2,19 @@ import React, { useEffect, useState } from 'react';
 import throttle from 'lodash.throttle';
 import { Input } from './Styles';
 
-interface Props {
-  search(args: any): any;
-  data: any;
+interface SearchArgs {
+  variables: {
+    filter: {
+      name: string;
+    }
+  }
 }
 
-export function SearchBar({ search, data }: Props) {
+interface Props {
+  search(args: SearchArgs): void;
+}
+
+export function SearchBar({ search }: Props) {
     const [searchQuery, setSearchQuery] = useState('');
 
     function changeSearchQuery(e: React.FormEvent<HTMLInputElement>) {
