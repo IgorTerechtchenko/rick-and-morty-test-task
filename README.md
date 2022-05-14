@@ -4,8 +4,6 @@
 
 The task is to create an app which fetches list of characters from [Rick and Morty API](https://rickandmortyapi.com/documentation/) and allows deletening characters from search results as well creating selecting two characters to form a party. Those characters must Rick and Morty in their names.
 
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
