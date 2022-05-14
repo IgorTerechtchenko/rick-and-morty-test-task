@@ -1,22 +1,9 @@
-import { gql, useLazyQuery } from '@apollo/client';
 import { useState } from 'react';
 import { Party } from '../Party';
 import { SearchBar } from '../SearchBar';
 import { SearchResults } from '../SearchResults';
 import { isMorty, isRick } from './utils';
-
-const CHARACTERS_QUERY = gql`
-  query Characters($filter: FilterCharacter) {
-    characters(filter: $filter) {
-      results {
-        name
-        id
-        image
-      }
-    }
-  }
-`;
-
+import { useCharacterSearch } from './hooks';
 export interface Character {
   id: number;
   name: string;
@@ -29,9 +16,7 @@ export interface PartyType {
 }
 
 export function RickAndMortyTeam() {
-    const [search, { data }] = useLazyQuery(
-        CHARACTERS_QUERY,
-    );
+    const [search, { data }] = useCharacterSearch();
 
     const [blacklist, setBlacklist] = useState<number[]>([]);
     const [party, setParty] = useState<PartyType>({});

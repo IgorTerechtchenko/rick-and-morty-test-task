@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const ResultsWrapper = styled.div`
+export const ResultsWrapper = styled.ul`
     margin: auto;
     margin-top: 30px;
     gap: 30px;

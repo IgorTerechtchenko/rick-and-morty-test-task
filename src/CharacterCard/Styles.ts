@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { ReactComponent as DeleteIcon } from './delete-icon.svg';
 
-export const CharacterCardWrapper = styled.div`
+export const CharacterCardWrapper = styled.li`
+    list-style: none;
     position: relative;
 `;
 
