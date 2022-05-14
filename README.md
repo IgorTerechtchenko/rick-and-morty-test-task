@@ -6,6 +6,8 @@ The task is to create an app which fetches list of characters from [Rick and Mor
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Result is available [here](https://rick-and-morty-test-task.glitch.me/)
+
 ## Available Scripts
 
 In the project directory, you can run:
